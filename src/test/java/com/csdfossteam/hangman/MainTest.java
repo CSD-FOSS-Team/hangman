@@ -1,5 +1,5 @@
 
-package com.csdfossteam;
+package com.csdfossteam.hangman;
 
 import static org.junit.Assert.assertEquals;
 
