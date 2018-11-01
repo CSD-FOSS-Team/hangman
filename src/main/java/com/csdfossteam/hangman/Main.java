@@ -1,5 +1,5 @@
 
-package com.csdfossteam;
+package com.csdfossteam.hangman;
 
 public final class Main {
 
