@@ -10,7 +10,7 @@
 
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<main.class>com.csdfossteam.Main</main.class>
+		<main.class>com.csdfossteam.hangman.Main</main.class>
 	</properties>
 
 	<dependencies>
@@ -33,12 +33,24 @@
 				<configuration>
 					<source>1.8</source>
 					<target>1.8</target>
-					
+
 					<showWarnings>true</showWarnings>
 					<showDeprecation>true</showDeprecation>
 				</configuration>
 			</plugin>
 
+			<plugin>
+				<artifactId>maven-jar-plugin</artifactId>
+				<version>3.0.2</version>
+				<configuration>
+					<archive>
+						<manifest>
+							<mainClass>${main.class}</mainClass>
+							<addClasspath>true</addClasspath>
+						</manifest>
+					</archive>
+				</configuration>
+			</plugin>
 
 		</plugins>
 	</build>
