@@ -1,6 +1,14 @@
 
 package com.csdfossteam.hangman.face.cli.base;
 
+import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.util.HashMap;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
+
+
 /**
  * A collection of views from a single file.
  * <p>
@@ -28,6 +36,44 @@ package com.csdfossteam.hangman.face.cli.base;
  */
 public class ViewsFile {
 
-    // TODO implement
+    /**
+     * Creates a new collection form the file of the given path.
+     */
+    public static final ViewsFile fromPath(Path path) throws IOException {
+
+        final String text = new String(Files.readAllBytes(path));
+        return new ViewsFile(text);
+    }
+
+    protected final HashMap<String, View> views;
+
+    /**
+     * Creates a new collection by parsing the given string.
+     */
+    public ViewsFile(String content) {
+        views = new HashMap<>();
+
+        // parse the content
+
+        final Pattern pattern = Pattern.compile("\t(.*)\n([^\t]*)");
+        final Matcher matcher = pattern.matcher(content);
+
+        while (matcher.find()) {
+
+            final String name = matcher.group(1);
+            final String text = matcher.group(2);
+
+            views.put(name, new View(text));
+        }
+
+    }
+
+    /**
+     * Get a view based on the given name.
+     */
+    public View get(String name) {
+
+        return views.get(name);
+    }
 
 }

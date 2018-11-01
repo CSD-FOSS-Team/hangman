@@ -50,6 +50,9 @@ public class ViewValues {
         values.remove(name);
     }
 
+    /**
+     * Removes all the values. Equivalent of creating a new object.
+     */
     public void unsetAll() {
         values.clear();
     }
