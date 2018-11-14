@@ -8,10 +8,68 @@ package com.csdfossteam.hangman.face.cli.base;
  */
 public class Screen {
 
-    protected View view;
-    protected ViewValues values;
-    protected Input input;
+    private final Console console;
 
-    // TODO implement
+    private View view;
+    private ViewValues values;
+    private Input input;
+
+    private boolean alive;
+
+    public Screen(Console console) {
+        this.console = console;
+    }
+
+    /**
+     * Starts the interface loop using the view, view values and the input state.
+     * <p>
+     * To stop the loop the {@link #stop()} method must be called.
+     */
+    public final void start() {
+        alive = true;
+
+        while (alive) {
+
+            console.output(view.text(values));
+
+            final String text = console.input();
+
+            input.handle(text);
+        }
+
+    }
+
+    /**
+     * Stops the interface loop, if one has been started.
+     */
+    public final void stop() {
+        alive = false;
+    }
+
+    // etters
+
+    public final View getView() {
+        return view;
+    }
+
+    public final ViewValues getValues() {
+        return values;
+    }
+
+    public final Input getInput() {
+        return input;
+    }
+
+    public final void setView(View view) {
+        this.view = view;
+    }
+
+    public final void setValues(ViewValues values) {
+        this.values = values;
+    }
+
+    public final void setInput(Input input) {
+        this.input = input;
+    }
 
 }
