@@ -30,12 +30,27 @@ public class Screen {
 
         while (alive) {
 
+            onPreOutput();
             console.output(view.text(values));
 
+            onPreInput();
             final String text = console.input();
 
+            onPreHandle();
             input.handle(text);
         }
+
+    }
+
+    public void onPreOutput() {
+
+    }
+
+    public void onPreInput() {
+
+    }
+
+    public void onPreHandle() {
 
     }
 
