@@ -124,8 +124,7 @@ public class View {
      */
     public void print(Console console, ViewValues values) {
 
-        // TODO use the console
-        System.out.println(text(values));
+        console.output(text(values));
     }
 
 }

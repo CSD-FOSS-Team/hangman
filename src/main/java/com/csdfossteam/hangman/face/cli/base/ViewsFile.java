@@ -2,9 +2,11 @@
 package com.csdfossteam.hangman.face.cli.base;
 
 import java.io.IOException;
+import java.io.InputStream;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.HashMap;
+import java.util.Scanner;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -38,11 +40,30 @@ public class ViewsFile {
 
     /**
      * Creates a new collection form the file of the given path.
+     *
+     * @throws IOException
      */
     public static final ViewsFile fromPath(Path path) throws IOException {
 
         final String text = new String(Files.readAllBytes(path));
         return new ViewsFile(text);
+    }
+
+    /**
+     * Creates a new collection form the file of the given path.
+     *
+     * @throws IOException
+     */
+    public static final ViewsFile fromResoure(String path) throws IOException {
+
+        final InputStream stream = ViewsFile.class.getClassLoader().getResourceAsStream(path);
+        try (final Scanner s = new Scanner(stream)) {
+
+            s.useDelimiter("\\A");
+            final String text = s.hasNext() ? s.next() : "";
+
+            return new ViewsFile(text);
+        }
     }
 
     protected final HashMap<String, View> views;
