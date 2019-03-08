@@ -14,6 +14,9 @@ import com.csdfossteam.hangman.face.cli.base.ViewsFile;
 /**
  * A cli interface for the hangman game
  *
+ * Note: DEPRICATED
+ * This class does not work with current implementation. Update Required
+ *
  * @author Akritas Akritidis
  */
 public class HangmanScreen extends Screen {

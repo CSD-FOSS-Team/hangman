@@ -1,0 +1,339 @@
+.root
+{
+    -fx-border-color: rgba(64,64,64,1.0);
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+}
+.dead-button
+{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-border-color: transparent;
+    -fx-padding: 11 22 11 21;
+    -fx-border-width: 0 0 0 0;
+    -fx-alignment: center;
+}
+.exit-button
+{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-border-color: transparent;
+    -fx-padding: 11 11 11 11;
+    -fx-border-width: 0 0 0 0;
+    -fx-alignment: center;
+
+}
+.exit-button:hover{
+    -fx-background-color: rgba(35,35,35,1.0);
+    -fx-border-color: rgba(35,35,35,1.0);
+}
+.host-label
+{
+    -fx-background-color: linear-gradient(
+            from 0px 0px to 5px 5px,
+            repeat,
+            rgba(35,35,35,1.0) 50%,
+            rgba(125,35,35,1.0) 50%
+    );
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 0 0 0;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-border-color: rgba(35,35,35,1.0);
+    -fx-padding: 5 10 5 10;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-font-family: 'Century Gothic';
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-font-size: 14;
+    -fx-font-weight: bold;
+}
+.menu-title
+{
+    -fx-text-alignment: center;
+    -fx-alignment: center;
+    -fx-padding: 0 0 0 10;
+    -fx-font-family: 'Century Gothic';
+    -fx-text-fill: rgba(190,190,190,1.0);
+    -fx-font-size: 16;
+}
+.menu-text
+{
+    -fx-background-color: transparent;
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 1 0 1;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-border-color: rgba(35,35,35,1.0);
+    -fx-padding: 11 11 11 11;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-alignment: left;
+    -fx-font-family: 'Century Gothic';
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-font-size: 16;
+}
+.menu-box
+{
+    -fx-background-color: rgba(35,35,35,1.0);
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 1 0 1;
+    -fx-background-radius: 0px, 0px, 0px, 0px;
+    -fx-border-color: rgba(35,35,35,1.0);
+    -fx-padding: 11 11 0 11;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-alignment: center;
+}
+.menu-button
+{
+    -fx-background-color: rgba(35,35,35,1.0);
+    -fx-background-repeat: no-repeat;
+    -fx-background-insets: 0 1 0 1;
+    -fx-background-radius: 0px, 0px, 4px, 0px;
+    -fx-border-color: rgba(35,35,35,1.0);
+    -fx-padding: 11 11 11 11;
+    -fx-border-width: 0 0 0 0;
+    -fx-border-insets: 0 0 0 0;
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 20;
+}
+.menu-button:hover{
+    -fx-background-color: rgba(45,45,45,1.0);
+    -fx-border-color: rgba(45,45,45,1.0);
+}
+.table-view
+{
+    -fx-border-color: rgba(35,35,35,1.0);
+    -fx-border-width: 0 0 0 0;
+    -fx-background-color: rgba(35,35,35,1.0);
+    -fx-background-insets: 0 0 1 1;
+
+}
+.table-view .column-header
+{
+    -fx-background-insets: 0 0 0 0;
+
+}
+.table-view .column-header,
+.table-view .column-header-background .filler {
+
+    -fx-font-size: 15;
+    -fx-font-family: "Century Gothic";
+    -fx-background-color:  rgba(85,85,85,1.0);
+    -fx-background-radius: 0 0 0 0;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-width: 3 1 3 0;
+    -fx-border-color: rgba(85,85,85,1.0);
+}
+.table-view .column-header .label{
+    -fx-background-color: transparent;
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-width: 0 0 0 0;
+    -fx-padding: 11 11 11 11;
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-font-weight: normal;
+    -fx-alignment: center-left;
+}
+.table-cell{
+    -fx-font-size: 13;
+    -fx-cell-size: 40;
+    -fx-padding: 10 10 6 12;
+    -fx-background-color: transparent;
+    -fx-border-color: rgba(35,35,35,1.0);
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-alignment: center-left;
+    -fx-text-alignment: center;
+
+}
+.table-cell:hover
+{
+    -fx-background-color: rgba(40,40,40,1.0);
+}
+.table-view .cell:selected
+{
+    -fx-background-color: rgba(45,45,45,1.0);
+    -fx-font-weight: bold;
+}
+.table-row-cell
+{
+    -fx-background-color: transparent;
+    -fx-text-background-color:  rgba(35,35,35,1.0);
+}
+.table-row-cell:selected {
+    -fx-background-color: whitesmoke;
+    -fx-text-background-color:  rgba(55,55,55,1.0);
+
+
+}
+
+/* scroll bar starts here */
+
+/* The increment and decrement button CSS class of scrollbar */
+.table-view .increment-button ,.table-view .decrement-button {
+    -fx-background-color:transparent;
+    -fx-background-radius: 2em;
+
+}
+
+/* The main scrollbar **track** CSS class  */
+.table-view .scroll-bar:horizontal .track,
+.table-view .scroll-bar:vertical .track{
+    -fx-background-color: transparent;
+    -fx-border-color:derive( rgba(35,35,35,1.0),80%);
+
+    -fx-background-radius: 2em;
+    -fx-border-radius:2em;
+}
+
+/* The main scrollbar **thumb** CSS class which we drag every time (movable) */
+.table-view .scroll-bar:horizontal .thumb,
+.table-view .scroll-bar:vertical .thumb {
+    -fx-background-color:derive( rgba(35,35,35,1.0),90%);
+    -fx-background-insets: 2, 0, 0;
+    -fx-background-radius: 2em;
+}
+.list-view
+{
+    -fx-background-color: rgba(35,35,35,1.0);
+    -fx-background-insets: 0 1 1 1;
+    -fx-border-color: transparent;
+}
+.list-cell
+{
+    -fx-background-color: rgba(35,35,35,1.0);
+    -fx-background-insets: 0 0 0 0;
+    -fx-border-color: transparent;
+    -fx-border: 0 0 0 0;
+    -fx-control-inner-background: transparent;
+    -fx-control-inner-background-alt: derive(-fx-control-inner-background, 50%);
+    -fx-font-family: "Century Gothic";
+    -fx-font-size: 13;
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-text-alignment: Center;
+}
+.list-cell:focused
+{
+    -fx-border-color: transparent;
+}
+.list-cell:hover
+{
+    -fx-cell-hover-color: rgba(45,45,45,1.0);
+    -fx-background-color: rgba(45,45,45,1.0);
+}
+.list-cell:filled:selected:focused, .list-cell:filled:selected {
+    -fx-background-color: rgba(45,45,45,1.0);
+    -fx-background-insets: 1 1 1 1;
+    -fx-font-size: 13;
+    -fx-font-weight: Bold;
+}
+.list-cell:filled:hover {
+    -fx-cell-hover-color: rgba(35,35,35,1.0);
+    -fx-text-fill: white;
+}
+.player-label-active
+{
+    -fx-text-alignment: center;
+    -fx-font-family: 'Century Gothic';
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-font-size: 12;
+}
+.player-label-inactive
+{
+    -fx-text-fill: rgba(57,125,119,1.0);
+}
+.player-vbox-active
+{
+    -fx-alignment: center;
+    -fx-padding: 5;
+    -fx-border-width: 0;
+    -fx-border-insets: 0;
+    -fx-border-style: solid inside;
+    -fx-border-radius: 0;
+    -fx-border-color: rgba(0,128,0,1);
+    -fx-background-color: rgba(0,145,132,1.0);
+    -fx-background-insets: 0;
+    -fx-background-radius: 2;
+}
+.player-vbox-inactive
+{
+    -fx-background-color: rgba(82,179,171,1.0);
+}
+
+.input-textfield
+{
+    -fx-background-color: rgba(64,64,64,1.0);
+    -fx-font-family: 'Century Gothic';
+    -fx-text-fill: rgba(247,247,247,1.0);
+    -fx-border-width: 0 0 0 0;
+    -fx-background-radius: 2;
+    -fx-border-color: rgba(55,55,55,1);
+
+}
+.hiddenword-label
+{
+    -fx-background-color: transparent;
+    -fx-font-size: 70px;
+    -fx-font-family: Aka-AcidGR-DiaryGirl;
+    -fx-text-fill: whitesmoke;
+    -fx-text-alignment: left;
+}
+.playersbox-hbox
+{
+    -fx-alignment: center;
+    -fx-background-color: rgba(64,64,64,1.0);
+    -fx-border-color: rgba(55,55,55,1.0);
+    -fx-border-width: 0 0 0 0;
+    -fx-border-radius: 0 0 0 0;
+    -fx-spacing: 5;
+}
+.exit-pane
+{
+    -fx-background-color: rgba(64,64,64,1.0);
+    -fx-border-color: rgba(64,64,64,1.0);
+    -fx-border-width: 5 5 5 5;
+}
+
+/**Costumization of The Bar where the buttons are located**/
+.exit-pane > .button-bar > .container {
+    -fx-background-color:rgba(64,64,64,1.0);
+}
+
+.exit-pane > .content.label {
+    -fx-padding: 0.5em 0.5em 0.5em 0.5em;
+    -fx-background-color: rgba(64,64,64,1.0);
+    -fx-text-fill: white;
+    -fx-font-size: 15.0 px;
+}
+
+.exit-pane *.header-panel{
+    -fx-background-color: rgba(45,88,84,1.0);
+    -fx-text-fill: white
+}
+.exit-pane *.header-panel *.label{
+    -fx-font-size: 18 px;
+    -fx-font-style: italic;
+    -fx-text-fill: white;
+    -fx-fill: white;
+}
+.exit-pane .button{
+    -fx-background-color :rgba(64,64,64,1.0);
+    -fx-text-fill: grey;
+    -fx-wrap-text: true;
+    -fx-effect: dropshadow( three-pass-box, rgba(45,88,84,1.0), 10.0, 0.0, 0.0, 0.0);
+    -fx-background-radius: 0 0 0 0;
+    -fx-cursor: hand;
+}
+.exit-pane .button:hover{
+    -fx-background-color: rgba(45,88,84,0.8);
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+}

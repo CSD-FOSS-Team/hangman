@@ -1,2 +1,2 @@
 # hangman
-The classic hangman with multiplayer
+The classic hangman with multiplayer!
