@@ -1,6 +1,13 @@
 # Config file for automatic testing at travis-ci.org
 
+dist: trusty
+
 language: java
+
+addons:
+  apt:
+    packages:
+      - openjdk-8-jdk
 
 jdk:
   - openjdk8
