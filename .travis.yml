@@ -9,10 +9,6 @@ addons:
     packages:
       - openjdk-8-jdk
 
-jdk:
-  - openjdk8
-  - oraclejdk8
-
 git:
   depth: 4
 
